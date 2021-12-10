@@ -1,0 +1,142 @@
+.vertical-center {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	.button1 {
+	  background-color: #FF1101;
+/*	  border-style: solid;
+	  border-color:#ed1709;*/
+	  color: white;
+	  padding: 50px 30px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 12px;
+	  width: 500px;
+	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.button2 {
+	  background-color: #007DB3;
+/*	  border-style: solid;
+	  border-color:#0271a1;*/
+	  color: white;
+	  padding: 50px 30px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 12px;
+	  width: 500px;
+	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.button3 {
+	  background-color: #FFA300;
+/*	  border-style: solid;
+	  border-color:#e39101;*/
+	  color: white;
+	  padding: 50px 30px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 12px;
+	  width: 500px;
+	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.button1:hover{
+		background-color: #ed1709;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+	.button1:not(:hover){
+		background-color: #FF1101;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+
+	.button2:hover{
+		background-color: #0271a1;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+	.button2:not(:hover){
+		background-color: #007DB3;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+
+	.button3:hover{
+		background-color: #e39101;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+	.button3:not(:hover){
+		background-color: #FFA300;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+
+	/*.bottombackground{
+		background-image: url(asv-swoosh.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		background-size: 100%;
+	}*/
+
+/*Background Opacity previous style*/
+	/*.background {
+		background: url(imageLibrary/asvswoosh3.png) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		background-image: Oop;
+	}*/
+
+	/*background opacity test*/
+
+	.background {
+		background-position: relative;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.background::before {
+		content: "";
+		background-image: url(imageLibrary/asvswoosh3.png);
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.87s;
+	}
+
+	@font-face {
+		font-family:Avenir, Arial;
+		src: url("font-styles/AvenirLTStd-Black.otf") format("opentype");
+	}
+
+	body {
+		font-family: Arial;
+		font-size: 28px;
+		font-weight: bolder;
+		letter-spacing: 0.5px;
+	}
+
